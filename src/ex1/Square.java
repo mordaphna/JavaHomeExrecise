@@ -1,11 +1,8 @@
 package ex1;
 
-public class Square extends Shape {
-    private final int length;
-
+public class Square extends Rectangle {
     public Square(String color, int length){
-        super(color);
-        this.length = length;
+        super(color,length,length);
 
     }
 

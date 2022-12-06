@@ -4,26 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main{
-    public static void main(String[] args)
-    {
-        List<Shape> shapes = new ArrayList<>();
+    public static List<Shape> shapes;
 
-        Circle circle1 = new Circle("pink",new Point(1, 1), 5);
-        Circle circle2 = new Circle("blue",new Point(3, 3), 4);
+    public static void initialize(){
+        shapes = new ArrayList<>();
+    }
 
-        Rectangle rectangle = new Rectangle("red", 4,3);
-        Shape square = new Square("green",3);
-
-
-        shapes.add(circle1);
-        shapes.add(circle2);
-        shapes.add(rectangle);
-        shapes.add(square);
-
-
+    public static void drawShapes(List<Shape> shapes){
         for (Shape shape : shapes) {
             shape.draw();
         }
-
     }
+
+
+    //FOR DEBUG
+    public static void main(String[] args){
+        initialize();
+        shapes.add(new Circle("pink",new Point(1, 1), 5));
+        shapes.add(new Rectangle("red", 4,3));
+        shapes.add(new Square("green",3));
+        drawShapes(shapes);
+    }
+
 }
