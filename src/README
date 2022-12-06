@@ -1,0 +1,22 @@
+
+
+running time explanation:
+
+awake running time: O(1)
+1. the function that should be efficient is awake(). because she is called every 1ms, if it's running
+time is linear, in can cause a
+the time of awake is O(1):
+a. concatenating a tail or a head of a linked list to another head or tail of linked list takes O(1)
+b. always saving the job linkedList needed to be awaken the earliest in the first node pointing to the head.
+c.going forward to the next element in nodeList is O(1)
+d. updating pointers takes O(1)
+
+sleep running time: O(k)
+the number of nodes in the SleepNodeLinked List is maximum O(k) where k is the number of jobs.
+So in order to append a node to the linkedList the max running time is O(k).
+adding takes O(1) because adding the node is just changing pointers, in addition to adding the job itself
+to the job-linkedList. (running or sleeping)
+the worst case is adding to the last of the linked list - O(k) where k is the number
+finding the jobb to delete takes as well O(k).
+
+explains about the implement in the files.
