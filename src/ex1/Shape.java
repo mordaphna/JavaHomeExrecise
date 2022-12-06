@@ -1,8 +1,17 @@
 package ex1;
 
-public interface Shape {
-    public String color = null;
-    public Point position = null;
 
-    void draw();
+public abstract class Shape{
+    private final String color;
+
+    public Shape(String color){
+        this.color = color;
+    }
+
+    //so that the classes that extends shape will have access to color.
+    public String getColor(){
+        return this.color;
+    }
+    public abstract void draw();
+
 }

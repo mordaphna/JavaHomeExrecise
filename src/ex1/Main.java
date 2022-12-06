@@ -8,17 +8,18 @@ public class Main{
     {
         List<Shape> shapes = new ArrayList<>();
 
-        Circle circle1 = new Circle(new Point(1, 1), 5, "pink");
-        Circle circle2 = new Circle(new Point(3, 3), 4, "blue");
-        Rectangle rectangle = new Rectangle(new Point(1, 1), new Point(3, 7), new Point(10,
-                1), "green");
-        Square square = new Square(new Point(1, 0), new Point(1, 3), new Point(4, 3),
-                new Point(4, 0), "yellow");
+        Circle circle1 = new Circle("pink",new Point(1, 1), 5);
+        Circle circle2 = new Circle("blue",new Point(3, 3), 4);
+
+        Rectangle rectangle = new Rectangle("red", 4,3);
+        Shape square = new Square("green",3);
+
 
         shapes.add(circle1);
         shapes.add(circle2);
         shapes.add(rectangle);
         shapes.add(square);
+
 
         for (Shape shape : shapes) {
             shape.draw();
