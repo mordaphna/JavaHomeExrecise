@@ -6,11 +6,7 @@ public class Square extends Rectangle {
 
     }
 
-    @Override
-    public void draw(){
-        System.out.println("drawing square");
-
-    }
+    //don't need to override the draw method because we draw square like Rectangle
 }
 
 

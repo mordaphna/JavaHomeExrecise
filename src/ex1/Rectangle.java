@@ -25,8 +25,9 @@ public class Rectangle extends Shape{
     }
 
     @Override
+    //this draw function will be called on square as well (we draw a rectangle and a square the same)
     public void draw(){
-        System.out.println("drawing rectangle");
+        //drawing rectangle
 
     }
 }

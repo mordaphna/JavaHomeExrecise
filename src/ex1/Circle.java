@@ -3,22 +3,22 @@ package ex1;
 import static java.lang.System.exit;
 
 public class Circle extends Shape{
-    private final String ERROR ="terminated because radios of the circle must to be positive." ;
+    private final String ERROR ="terminated because radius of the circle must to be positive." ;
     private final Point center;
-    private final int radios;
+    private final int radius;
 
 
 
-    public Circle( String color, Point center, int radios ){
+    public Circle( String color, Point center, int radius){
         super(color);
         this.center = center;
-        this.radios = radios;
+        this.radius = radius;
         checkValid();
 
     }
 
     private void checkValid() {
-        if (radios<=0){
+        if (radius <=0){
             System.out.println(ERROR);
             exit(1);
         }
@@ -26,6 +26,6 @@ public class Circle extends Shape{
 
     @Override
     public void draw() {
-        System.out.println("drawing circle");
+        //drawing circle
     }
 }

@@ -22,7 +22,7 @@ public class Main{
         initialize();
         shapes.add(new Circle("pink",new Point(1, 1), 5));
         shapes.add(new Rectangle("red", 4,3));
-        shapes.add(new Square("green",3));
+        shapes.add(new Square("green",2));
         drawShapes(shapes);
     }
 
